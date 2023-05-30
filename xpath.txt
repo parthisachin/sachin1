@@ -1,0 +1,13 @@
+xpath
+ IWebDriver driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("https://www.instagram.com/");
+
+          IWebElement name = driver.FindElement(By.XPath("//input[@name='username']"));
+            name.SendKeys("harithsachin");
+            Thread.Sleep(2000);
+
+            IWebElement password = driver.FindElement(By.XPath("//input[@type='password']"));
+            password.SendKeys("gopikannu");
+            Thread.Sleep(2000);
+           
